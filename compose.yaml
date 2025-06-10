@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  nuvooruit:
+    mem_limit: 512m
+    image: bitsenbytes/nu-vooruit:frontend_0.3
+    build:
+      context: .
+      target: nuvooruit
+    ports:
+      - 80:80
+    expose:
+      - 80
